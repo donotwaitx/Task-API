@@ -11,16 +11,8 @@ use Illuminate\Http\JsonResponse;
 
 class TaskController extends Controller
 {
-    /**
-     * @var TaskService
-     */
     protected $taskService;
 
-    /**
-     * TaskController constructor.
-     *
-     * @param TaskService $taskService
-     */
     public function __construct(TaskService $taskService)
     {
         $this->taskService = $taskService;
